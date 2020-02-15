@@ -1,0 +1,50 @@
+html,
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: #222;
+    background: #f8f8f8;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+a {
+    color: #222;
+}
+
+
+h2 {
+    margin-top: 32px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #222;
+}
+
+h2:first-child {
+    margin-top: 8px;
+}
+
+h3 {
+    margin-top: 28px;
+    font-weight: normal;
+}
+
+a {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.dp {
+    width: 20%;
+    max-width: 200px;
+    position: relative;
+    bottom: -25%;
+    right: 2.5%;
+    border: solid 3px white;
+    border-radius: 2em;
+    
+}
