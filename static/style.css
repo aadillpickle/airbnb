@@ -96,3 +96,16 @@ width: auto;
 .carousel-control.right {
 background-image: none;
 }
+.entry{position: relative;}
+
+.arlo_tm_portfolio_image_main{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    min-width: 100%;
+}
