@@ -1,158 +1,157 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html>
+    <head>
+        <title>rent sh.it</title>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/blocks.css/dist/blocks.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../static/carouselstuff.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <title>rent sh.it</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/blocks.css/dist/blocks.min.css"/>
-    <link rel="stylesheet" href="../static/carouselstuff.css"/>
-    <link rel="stylesheet" href="../style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    </head>
 
-    <title>Product Template</title>
-  </head>
-  <nav class="navbar">
-</nav>
-<div class="container">
-    <div class="modal fade" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-      
-            <!-- Modal Header -->
-            <div class="modal-header">
-              
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-      
-            <!-- Modal body -->
-            
-            <div class="modal-body">
-                <h4 class="modal-title"><b>How long</b> do you want to keep it?</h4>
-                <div class="wrapper block">
-                <input type="text" name="datefilter" class="form-control pull-right" value="" />
+    <body>
+        <nav class="navbar">
+                <!--<img class="dp" src="/assets/sort.svg" style="bottom:-25%">-->
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-3" style="text-align:center; margin-top:12px">
+                    <h1>rent sh.it</h1>
                 </div>
-                <h4 class="modal-title"><b>Other Comments</b></h4>
-                <div class="wrapper block">
-                <input type="text" name="datefilter" class="form-control pull-right" value="" />
-                </div>
-            </div>
-                                
-                <script type="text/javascript">
-                $(function() {
-
-                    $('input[name="datefilter"]').daterangepicker({
-                        autoUpdateInput: false,
-                        locale: {
-                            cancelLabel: 'Clear'
-                        }
-                    });
-
-                    $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
-                        $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-                    });
-
-                    $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
-                        $(this).val('');
-                    });
-
-                });
-                </script>
-
-            <button class="accent block">Submit</button>
-            </div>
-      
-            <!-- Modal footer -->
-            <div class="modal-footer">
-            </div>
-      
-          </div>
-        </div>
-      </div>
-    <div class="row" id="center">
-        <div class="col-3" style="text-align:center">
-            <h1>rent sh.it</h1>
-        </div>
-        <div class="col-3" style="text-align:center">
-        </div>
-        <div class="col-3" style="text-align:center">
-        </div>
-        <div class="col-3" style="text-align:center">
-            <img class="dp" src="../assets/sort.svg" style="bottom:-50%">
-        </div>
-    </div>
-    <h1 style="padding-bottom: 0.75em; border-top: 4px solid #222;"></h1>
-  <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-8">
-                
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox">
-                          <div class="carousel-item active">
-                            <div class="fixed wrapper block">
-                            <div class="entry arlo_tm_portfolio_animation_wrap">
-                                <img src="http://placehold.it/700x500" class="image-responsive" alt="">
-                                <div class="arlo_tm_portfolio_image_main" data-img-url="https://i.ebayimg.com/00/s/NjAwWDgwMA==/z/L8EAAOSwWy5d~WKp/$_59.PNG" style="background-image: url(&quot;https://i.ebayimg.com/00/s/NjAwWDgwMA==/z/L8EAAOSwWy5d~WKp/$_59.PNG&quot;);"></div>
-                            </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="fixed wrapper block">
-                            <div class="entry arlo_tm_portfolio_animation_wrap">
-                                <img src="http://placehold.it/700x500" class="image-responsive" alt="">
-                                <div class="arlo_tm_portfolio_image_main" data-img-url="https://i.ebayimg.com/00/s/ODAwWDYwMA==/z/k5sAAOSwzpxd~WKq/$_59.PNG" style="background-image: url(&quot;https://i.ebayimg.com/00/s/ODAwWDYwMA==/z/k5sAAOSwzpxd~WKq/$_59.PNG&quot;);"></div>
-                            </div>
-                            </div>
-                          </div>
+                <div class="col-6" style="text-align:right; margin-top:20px">
+                    <div class="searchBlock">
+                        <div class="fixed wrapper block" style="text-align:center">
+                            <input type="text" value="Search" placeholder="Type something...">
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div>                
-                </div>
-            <div class="col-4">
-                <div class="row">
-                    <div class="card fixed block">
-                        <div class="col-12">
-                        <h2>A <b>M18 Milwaukee Drill Set</b> for rent</h2>
-                        <p><h3>$32</h3> per week</p>
-                        <p>in <b>Toronto, Ontario</b></p>
-                        <button type="button" class="accent block" data-toggle="modal" data-target="#myModal">
-                            Rent It
-                        </button>
-                        
-                        <br>
+                        <button type="submit" class="accent block searchButton btn btn-primary">Go!</button>
                     </div>
+                </div>
+                <div class="col-3" style="text-align:center; margin-top:24px">
+                    <a href="post-ad.html">
+                        <button class="btn block accent">Post Ad</button> 
+                    </a>
+                </div>
+            </div>
+            <h1 style="padding-bottom: 0.60em; border-top: 4px solid #222;"></h1>
+        </div> 
+        <div class="container">
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+          
+                <!-- Modal body -->
+                
+                <div class="modal-body">
+                    <h4 class="modal-title"><b>How long</b> do you want to keep it?</h4>
+                    <div class="wrapper block">
+                    <input type="text" name="datefilter" class="form-control pull-right" value="" />
+                    </div>
+                    <h4 class="modal-title"><b>Other Comments</b></h4>
+                    <div class="wrapper block">
+                    <input type="text" name="datefilter" class="form-control pull-right" value="" />
+                    </div>
+                </div>
+                                    
+                    <script type="text/javascript">
+                    $(function() {
+    
+                        $('input[name="datefilter"]').daterangepicker({
+                            autoUpdateInput: false,
+                            locale: {
+                                cancelLabel: 'Clear'
+                            }
+                        });
+    
+                        $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+                            $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+                        });
+    
+                        $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+                            $(this).val('');
+                        });
+    
+                    });
+                    </script>
+    
+                <button class="accent block">Submit</button>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                </div>
+          
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                              <div class="carousel-item active">
+                                <div class="fixed wrapper block">
+                                <div class="entry arlo_tm_portfolio_animation_wrap">
+                                    <img src="http://placehold.it/700x500" class="image-responsive" alt="">
+                                    <div class="arlo_tm_portfolio_image_main" data-img-url="https://i.ebayimg.com/00/s/NjAwWDgwMA==/z/L8EAAOSwWy5d~WKp/$_59.PNG" style="background-image: url(&quot;https://i.ebayimg.com/00/s/NjAwWDgwMA==/z/L8EAAOSwWy5d~WKp/$_59.PNG&quot;);"></div>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="fixed wrapper block">
+                                <div class="entry arlo_tm_portfolio_animation_wrap">
+                                    <img src="http://placehold.it/700x500" class="image-responsive" alt="">
+                                    <div class="arlo_tm_portfolio_image_main" data-img-url="https://i.ebayimg.com/00/s/ODAwWDYwMA==/z/k5sAAOSwzpxd~WKq/$_59.PNG" style="background-image: url(&quot;https://i.ebayimg.com/00/s/ODAwWDYwMA==/z/k5sAAOSwzpxd~WKq/$_59.PNG&quot;);"></div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>                
+                    </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="card fixed block">
+                            <div class="col-12">
+                            <h2>A <b>M18 Milwaukee Drill Set</b> for rent</h2>
+                            <p><h3>$32</h3> per week</p>
+                            <p>in <b>Toronto, Ontario</b></p>
+                            <button type="button" class="accent block" data-toggle="modal" data-target="#myModal">
+                                Rent It
+                            </button>
+                            
+                            <br>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+    </body>
 </html>
