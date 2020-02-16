@@ -55,7 +55,7 @@ a {
     background-image: none;
 }
 div {
-    padding-top: 0.25em;
+    padding-top: 0.15em;
     padding-bottom: 0.25em; 
 }
 .support-smol {
@@ -65,3 +65,10 @@ div {
     font-weight: 500;
   }
 
+.home-product-image {
+    width: 70%;
+    max-width: 800px;
+}
+.accent {
+    --block-accent-color: #2c2c2c;
+}
