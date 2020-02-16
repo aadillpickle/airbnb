@@ -8,7 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/blocks.css/dist/blocks.min.css"/>
-    <link rel="stylesheet" href="../static/style.css"/>
+    <link rel="stylesheet" href="../static/carouselstuff.css"/>
+    <link rel="stylesheet" href="../style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -40,10 +41,12 @@
                 <div class="wrapper block">
                 <input type="text" name="datefilter" class="form-control pull-right" value="" />
                 </div>
+                <h4 class="modal-title"><b>Other Comments</b></h4>
+                <div class="wrapper block">
+                <input type="text" name="datefilter" class="form-control pull-right" value="" />
+                </div>
             </div>
-                <br>
-                <h4 class="modal-title"><b>Anything</b> to add?</h4>
-                
+                                
                 <script type="text/javascript">
                 $(function() {
 
@@ -64,11 +67,12 @@
 
                 });
                 </script>
+
+            <button class="accent block">Submit</button>
             </div>
       
             <!-- Modal footer -->
             <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
       
           </div>
